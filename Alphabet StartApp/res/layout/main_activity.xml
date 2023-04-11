@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/homescreen" >
+
+    <Button
+        android:id="@+id/button_capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:background="@drawable/capital_alpha_bg"
+        android:text="@string/capital_alphabet"
+        android:textColor="@color/text_color"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_capital"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/small_alpha_bg"
+        android:text="@string/small_alphabet"
+        android:textColor="@color/text_color"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_small"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/more_bg"
+        android:text="@string/more_app"
+        android:textColor="@color/text_color"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_more"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/Img_Des"
+        android:src="@drawable/bottom" />
+
+</RelativeLayout>

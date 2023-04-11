@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/homescreen" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_above="@+id/adView" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button_capital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/capital_alpha_bg"
+                android:text="@string/capital_alphabet"
+                android:textColor="@color/text_color"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/button_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_capital"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/small_alpha_bg"
+                android:text="@string/small_alphabet"
+                android:textColor="@color/text_color"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/button_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_small"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/more_bg"
+                android:text="@string/more_app"
+                android:textColor="@color/text_color"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_more"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bottom" />
+        </RelativeLayout>
+    </ScrollView>
+  <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_publisher_id"/>
+</RelativeLayout>
